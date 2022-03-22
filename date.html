@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head>
+
+    <meta name="viewport" content="width = device-width,initial-scale=1.0">
+
+
+    <style type="text/css">
+
+body{background-color:rgb(18, 16, 22);overflow:hidden;}
+@media only screen and (max-width:620px){
+    div.row{    width:100vw;
+            height:100vw;
+          
+            background-size: 100vw;
+            }
+
+    #divA{      background-color:rgba(18, 16, 22,0.1);
+                 border:5px white solid;
+                 box-shadow:5px 5px 25px white;
+                width:70vw;height:70vw;
+                 border-radius:50%;
+                 margin-left:15%;
+                 margin-top:25%;}
+
+
+
+    #divB{
+                    background-color:rgba(34, 19, 77,0.8);
+                     width:;
+                     height:100vw;} 
+    #display    {   width:200px;
+                    position:relative;
+                    top:70px;
+                    left:70px;
+                    height:40px;
+                    background-color:rgba(0,0,0,0.25);
+                    border:1px white solid;
+                    border-radius:5px; 
+                    box-shadow:2px 2px 2px white;
+                    color:white;
+                    font-family:Exo;
+                    font-size:20px;
+                    text-align:center;
+                    vertical-align:center;
+                    padding-top:10px;
+
+
+
+                 }
+  #displayMiddle{
+                    width:300px;
+                    height:100px;
+                    background-color:none;
+                    position:relative;
+                    top:90px;
+                    left:20px;
+                    border-width:2px 0px 2px 0px;
+                    border-color:white;
+                    border-style:dashed;
+  }
+  #buttonMenu{
+                     background-color:none;
+                     position:relative;
+                     top:100px;
+                     left:110px;
+                     width:120px;               
+
+                 }
+  button{           width:50px;
+                    height:20px;
+                    margin-left:10px;
+                    margin-top:10px;
+                    background-color:white;
+                    color:black;
+                    font-family:Fresca;
+                    border:0px white solid;
+                    box-shadow:0px 1px 0px white;
+                    font-weight:bolder;
+
+  }
+
+  #day{
+      color:white;
+      font-family:Gafata;
+      font-size:25px;
+  }
+  #month{
+      color:white;
+      font-family:Gafata;
+      font-size:25px;
+  }
+  #year{
+      color:white;
+      font-family:Gafata;
+      font-size:25px;
+  }
+  #dayweek{color:white;
+  font-family:Gafata;
+  font-size:25px;}
+  #Monthname{
+    color:white;
+  font-family:Gafata;
+  font-size:25px;
+
+  }
+
+
+
+}
+@media only screen and  (min-width:610px){
+
+
+    div.row{    width:100vw;
+            height:100vw;
+          
+            background-size: 100vw;
+            }
+
+    #divA{      background-color:rgba(18, 16, 22,0.1);
+                 border:5px white solid;
+                 box-shadow:5px 5px 25px white;
+                width:30vw;height:30vw;
+                 border-radius:50%;
+                 margin-left:35%;
+                 margin-top:5%;}
+
+
+
+    #divB{
+                    background-color:rgba(34, 19, 77,0.8);
+                     width:;
+                     height:100vw;} 
+
+    #display    {   width:200px;
+                    position:relative;
+                    top:15%;
+                    left:28%;
+                    height:40px;
+  
+                    background-color:rgba(0,0,0,0.25);
+                    border:1px white solid;
+                    border-radius:5px; 
+                    box-shadow:2px 2px 2px white;
+                    color:white;
+                    font-family:Exo;
+                    font-size:20px;
+                    text-align:center;
+                    vertical-align:center;
+                    padding-top:10px;
+
+}
+  #displayMiddle{
+                    width:350px;
+                    height:100px;
+                    background-color:none;
+                    position:relative;
+                    top:20%;
+
+                    left:8%;
+                    border-width:2px 0px 2px 0px;
+                    border-color:white;
+                    border-style:dashed;
+  }
+  #buttonMenu{
+                     background-color:none;
+                     position:relative;
+                     top:100px;
+                     left:33%;
+                     width:120px;               
+
+                 }
+  button{           width:50px;
+                    height:20px;
+                    margin-left:10px;
+                    margin-top:10px;
+                    background-color:white;
+                    color:black;
+                    font-family:Fresca;
+                    border:0px white solid;
+                    box-shadow:0px 1px 0px white;
+                    font-weight:bolder;
+
+  }
+
+  #day{
+      color:white;
+      font-family:Gafata;
+      font-size:25px;
+  }
+  #month{
+      color:white;
+      font-family:Gafata;
+      font-size:25px;
+  }
+  #year{
+      color:white;
+      font-family:Gafata;
+      font-size:25px;
+  }
+  #dayweek{color:white;
+  font-family:Gafata;
+  font-size:25px;}
+
+  #Monthname{
+    color:white;
+  font-family:Gafata;
+  font-size:25px;
+
+  }
+
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="row">
+
+    <div id="divA">
+   <div id="display">  <span id="p0">0</span><span>:</span><span id="p1">00</span><span id="p2">:</span><span id="p3">00</span><br>
+
+    </div> 
+  
+   
+   
+   
+   <div id="displayMiddle">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <span id="day"></span>&nbsp;&nbsp;&nbsp;<span id="month"></span>&nbsp;&nbsp;&nbsp;<span id="year"></span>
+
+<br><br>
+<span id="dayweek" style="margin-left:60px;"></span><span id="Monthname"></span>
+
+
+   </div>
+   
+   
+   
+   <div id="buttonMenu">
+ 
+<button id="b1" onclick="kas()">start</button><button id="b2" onclick="pause()" >stop</button>
+<button id="b3" onclick="money()" style="margin-left:35px;">reset</button>
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+    <script type="text/javascript">
+    
+                //declaring dates
+var abc =  new Date();
+
+var maj= new Date();
+document.write(maj.getFullYear());
+var konk = null;
+var baj=00;
+var da=00;
+var aka=0;
+var ata=0;
+document.getElementById("p0").innerHTML="0";
+document.getElementById("p1").innerHTML="0" + baj ;
+document.getElementById("p3").innerHTML="0" + da ;
+function kas(){
+    function kash(){
+      baj=  baj+1;
+      console.log(baj);
+      document.getElementById("p1").innerHTML="0" + baj ;
+      if(baj==10 || baj > 10){
+          document.getElementById('p1').innerHTML=baj;
+          
+
+      }
+      if( baj==60){
+          ata=ata+1;
+          baj=0;
+          document.getElementById("p0").innerHTML=ata;
+        document.getElementById("p1").innerHTML="0" + baj ;
+
+     
+      }
+   } 
+
+ konk=window.setInterval(kash,1000)
+}
+
+
+function pause(){
+ clearInterval(konk);
+ 
+console.log("err");}
+
+function money(){
+
+clearInterval(konk);
+baj=0;
+da=0;
+    document.getElementById("p0").innerHTML="0";
+document.getElementById("p1").innerHTML="0" + baj ;
+document.getElementById("p3").innerHTML="0" + da ;
+    console.log("clear")
+}
+
+
+var ja=new Date();
+document.getElementById("day").innerHTML=ja.getDate();
+
+var da=new Date();
+document.getElementById("month").innerHTML=da.getMonth() +1;
+
+var ma=new Date();
+document.getElementById("year").innerHTML=ma.getFullYear()
+
+
+
+var week =["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+var mk=new Date();
+var ter=mk.getDate();
+document.getElementById("dayweek").innerHTML=(week[ter+1]);
+
+
+var month=["January","February","March","April","May","June","July","August","September","October","November","December"];
+var va= new Date();
+var fa=va.getMonth();
+
+document.getElementById("Monthname").innerHTML ="," + "&nbsp;"+ "&nbsp;" +  (month[fa]);
+
+    </script>
+
+</body>
+</html>
